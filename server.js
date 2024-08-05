@@ -6,11 +6,11 @@ var path = require('path');
 function serveFile(res, filePath) {
     fs.readFile(filePath, (err, html) => {
         if (err) {
-            res.writeHead(500, {'Content-Type': 'text/plain'});
+            res.writeHead(500, { 'Content-Type': 'text/plain' });
             res.end('Server Error');
             return;
         }
-        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(html);
     });
 }
@@ -27,6 +27,6 @@ http.createServer((req, res) => {
             serveFile(res, path.join(__dirname, 'login.html'));
             break;
     }
-}).listen(3000, () => {
+}).listen(process.env.PORT || 3000, () => {
     console.log('Server running at http://localhost:3000/');
 });
