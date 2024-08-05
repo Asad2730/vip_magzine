@@ -1,32 +1,18 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path');
+const express = require("express")
 
-// Function to serve HTML files
-function serveFile(res, filePath) {
-    fs.readFile(filePath, (err, html) => {
-        if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Server Error');
-            return;
-        }
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(html);
-    });
-}
+const app = express()
+const port = process.env.PORT || 6932
 
-http.createServer((req, res) => {
-    switch (req.url) {
-        case '/signup':
-            serveFile(res, path.join(__dirname, 'signup.html'));
-            break;
-        case '/forgetPassword':
-            serveFile(res, path.join(__dirname, 'forgetPassword.html'));
-            break;
-        default:
-            serveFile(res, path.join(__dirname, 'login.html'));
-            break;
-    }
-}).listen(process.env.PORT || 3000, () => {
-    console.log(`Server running at ${process.env.PORT || 3000}`);
-});
+app.use("/assets", express.static(__dirname + "/assets"))
+
+app.get("/signup", (_, res) => {
+  res.sendFile(__dirname + "/signup.html")
+})
+app.get("/forgetPassword", (_, res) => {
+  res.sendFile(__dirname + "/forgetPassword.html")
+})
+app.get("/", (_, res) => {
+  res.sendFile(__dirname + "/login.html")
+})
+
+app.listen(port, () => console.info(`App listening on port ${port}`))
