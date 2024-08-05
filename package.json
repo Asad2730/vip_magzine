@@ -5,8 +5,9 @@
     "particles.js": "^2.0.0"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "start": "node server.js"
+    "start": "node server.js",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    
   },
   "devDependencies": {
     "tailwindcss": "^3.4.7"
