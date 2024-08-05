@@ -1,0 +1,9 @@
+{
+  "dependencies": { "bootstrap": "^5.3.3", "particles.js": "^2.0.0" },
+  "scripts": {
+    "start": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
