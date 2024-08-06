@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "serve": "npx tailwindcss -i ./input.css -o ./output.css --watch"
     
   },
   "devDependencies": {

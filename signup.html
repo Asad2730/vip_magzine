@@ -1,199 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      .animated-bg {
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(0, 0, 0, 0.1) 100%
-        );
-        animation: gradient 3s ease infinite;
-        background-size: 200% 200%;
-      }
-   
-      .btn-custom {
-        background-color: #23173d;
-        color: #fff;
-      }
-      .btn-custom:hover {
-        background-color: #1a1d2f;
-      }
-      .text-black {
-        color: #000000;
-      }
-      .text-custom {
-        color: #1a1d2f;
-      }
-      #particles-js {
-        background: #add8e6;
-        height: 100vh;
 
-        z-index: -10;
-      }
-      #main {
-        position: absolute;
-        text-align: center;
-        top: 0%;
-        width: 100%;
-      
-      }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="particles-js"></div>
-    <div class="d-flex flex-column" id="main">
-      <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top py-2"
-      >
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link text-custom" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <button
-                  class="nav-link text-custom"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  English
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item text-custom" href="#">French</a>
-                  <a class="dropdown-item text-custom" href="#">Swedish</a>
-                  <a class="dropdown-item text-custom" href="#">Italian</a>
-                </div>
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup Page</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .btn-custom {
+      background-color: #23173d;
+      color: #fff;
+    }
+
+    .btn-custom:hover {
+      background-color: #1a1d2f;
+    }
+
+    .text-black {
+      color: #000000;
+    }
+
+    .text-primary {
+      color: #4242f5;
+    }
+
+    .text-secondary {
+      color: #607e89;
+    }
+
+    #particles-js {
+      background: #1db9de;
+      height: 100vh; /* Full viewport height */
+      width: 100vw; /* Full viewport width */
+      position: fixed; /* Fixed position to stay in place */
+      top: 0;
+      left: 0;
+      z-index: -1; /* Behind other content */
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex-grow: 1; /* Allows this section to grow and push the footer down */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-link {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 15px; /* Adjust spacing as needed */
+    }
+    .navbar-nav .nav-item:last-child {
+      margin-right: 0; /* Remove margin from the last item */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <div id="main">
+    <!-- Navbar -->
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top py-2">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item me-3"> <!-- Add margin-end class -->
+          <a class="nav-link text-primary" href="#">
+            <img 
+              src="https://magazine.vipclubscene.com/assets/img/global/VIP_Club_Scene_Entrance_Page"
+              alt="nav_icon_1"
+            />
+          </a>
+        </li>
+        <li class="nav-item dropdown me-3"> <!-- Add margin-end class -->
+          <button
+            class="nav-link text-primary"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="row-auto">
+              <img src="https://magazine.vipclubscene.com/assets/img/global/usaglobal.png"/>
+              English
+            </span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item text-primary" href="#">French</a>
+            <a class="dropdown-item text-primary" href="#">Swedish</a>
+            <a class="dropdown-item text-primary" href="#">Italian</a>
           </div>
-        </div>
-      </nav>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navbar -->
 
-      <!-- End of Navbar -->
+    <!-- End of Navbar -->
 
-      <!-- Main Content -->
-      <div
-        class="flex-grow-1 d-flex flex-column align-items-center justify-content-center"
-      >
-        <div
-          class="w-100 d-flex align-items-center justify-content-center px-4 px-sm-6 px-lg-8"
-        >
-          <div class="py-3 mx-auto" style="max-width: 400px">
-            <!-- Card -->
-            <div class="p-4 mt-4 text-start bg-white rounded shadow-lg">
-              <div class="d-flex flex-column align-items-center h-100">
-                <div class="text-center mb-4">
-                  <img
-                    src="https://amethgalarcio.web.app/assets/logo-42fde28c.svg"
-                    class="w-25"
-                    alt="logo"
+    <!-- Main Content -->
+    <div class="content">
+      <div class="w-100 d-flex align-items-center justify-content-center px-4 px-sm-6 px-lg-8">
+        <div class="py-3 mx-auto" style="max-width: 400px">
+          <!-- Card -->
+          <div class="p-4 mt-4 text-start bg-white rounded shadow-lg">
+            <div class="d-flex flex-column align-items-center h-100">
+              <div class="text-center mb-4">
+                <img src="https://magazine.vipclubscene.com/img/vip%20club%20scene%20magazine%20logo%20blue"
+                 class="w-50" alt="logo" />
+
+                <h5 class="mt-2 mb-0 text-dark font-weight-light fs-6">
+                  Create your account
+                </h5>
+              </div>
+              <form>
+                <div class="mb-3 w-100">
+                  <label class="form-label">
+                    Email<span class="text-red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control rounded-lg text-black "
                   />
-                  <h5 class="mt-2 mb-0 text-dark font-weight-bold">
+                </div>
+                <div class="mb-3 w-100">
+                  <label class="form-label">
+                    Username<span class="text-red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control rounded-lg text-black"
+                  />
+                </div>
+                <div class="mb-3 w-100">
+                  <label class="form-label">
+                    Password<span class="text-red">*</span>
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control rounded-lg text-white"
+                  />
+                </div>
+                <div class="mb-3 w-100">
+                  <label class="form-label">
+                    Repeat Password<span class="text-red">*</span>
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control rounded-lg text-white"
+                  />
+                </div>
+                <div class="mb-3 w-100">
+                  <label class="form-label">
+                    3 + 6<span class="text-red">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control rounded-lg text-black"
+                  />
+                </div>
+                <div class="mb-3 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-custom w-100 text-white"
+                  >
                     Create your account
-                  </h5>
+                  </button>
                 </div>
-                <form>
-                  <div class="mb-3 w-100">
-                    <label class="form-label"
-                      >Email<span class="text-red">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-lg text-black"
-                    />
-                  </div>
-                  <div class="mb-3 w-100">
-                    <label class="form-label"
-                      >Username<span class="text-red">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-lg text-black"
-                    />
-                  </div>
-                  <div class="mb-3 w-100">
-                    <label class="form-label"
-                      >Password<span class="text-red">*</span></label
-                    >
-                    <input
-                      type="password"
-                      class="form-control rounded-lg text-white"
-                    />
-                  </div>
-                  <div class="mb-3 w-100">
-                    <label class="form-label"
-                      >Repeat Password<span class="text-red">*</span></label
-                    >
-                    <input
-                      type="password"
-                      class="form-control rounded-lg text-white"
-                    />
-                  </div>
-                  <div class="mb-3 w-100">
-                    <label class="form-label"
-                      >3 + 6<span class="text-red">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-lg text-black"
-                    />
-                  </div>
-                  <div class="mb-3 w-100">
-                    <button
-                      type="submit"
-                      class="btn btn-custom w-100 text-white"
-                    >
-                      Create your account
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- make   -->
-            <div class="w-100 d-flex flex-column align-items-center mt-5">
-              <div class="text-center mb-2">
-                <div class="text-custom text-custom">
-                  Already Have an account?
-                </div>
-              </div>
-              <!-- Full-width footer content -->
+              </form>
             </div>
           </div>
-        </div>
-
-        <div class="d-flex flex-column align-items-center mt-5 w-100">
-          <div class="text-center mb-2 w-100 bg-white">
-            <a href="/"
-             class="text-blue-800">Signin to your account</a>
-          </div>
+          <!-- End of Card -->
+          <div class="text-primary text-secondary text-center">
+            Already Have an account?
+          </div> 
         </div>
       </div>
-
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer Links -->
+    <div class="footer-link">
+      
+      <a href="/" class="text-blue-800">
+        Sign in to your account
+      </a>
+    </div>
+    <!-- End of Footer Links -->
 
-    <!-- Import Particles.js and app.js files -->
+  </div>
 
-    <script src="particles.js-master\particles.js"></script>
-    <script src="particles.js-master\demo\js\app.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Import Particles.js and app.js files -->
+  <script src="particles.js-master/particles.js"></script>
+  <script src="particles.js-master/demo/js/app.js"></script>
+</body>
+
 </html>
