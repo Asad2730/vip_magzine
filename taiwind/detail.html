@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Page</title>
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="flex flex-1">
+        <div class="flex flex-col h-screen w-screen">
+            <!-- Header.. h-1/6 -->
+            <div class="flex flex-row sm:flex-col md:flex-col lg:flex-col w-full h-auto bg-white p-4">
+                <!-- Header Content -->
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
+                    <!-- Title -->
+                    <div class="md:text-left w-full md:w-1/5 mb-4 md:mb-0">
+                        <span class="font-bold text-lg">VIP CLUB SCENE MAGAZINE</span>
+                    </div>
+
+                    <!-- User Menu -->
+                    <div class="w-full md:w-4/5">
+                        <ul class="flex flex-col md:flex-row items-center justify-end md:pr-20 mt-4 md:mt-0">
+                            <li class="text-center md:text-right">
+                                <span>Welcome</span><br />
+                                <select class="bg-gray-200 text-center md:text-left rounded px-3 py-1">
+                                    <option value="user_name">User_Name</option>
+                                    <option value="my_profile">
+                                        <a href="#" class="flex items-center">
+                                            <i class="fas fa-user mr-2"></i> My Profile
+                                        </a>
+                                    </option>
+                                    <option value="logout">
+                                        <a href="#" class="flex items-center">
+                                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                                        </a>
+                                    </option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Header -->
+
+            <!-- Main -->
+            <div class="flex flex-1 ">
+                <!-- Card -->
+                <div class="w-full   border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <div class="flex justify-center ">
+                        <!-- Content goes here -->
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+            <!-- End of Main -->
+
+        </div>
+    </div>
+</body>
+
+</html>
