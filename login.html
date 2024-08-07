@@ -147,13 +147,15 @@
                     >
                   </div>
                   <div class="mb-3 w-100">
+                   <a href="/home">
                     <button
-                      id="loginBtn"
-                      type="submit"
-                      class="btn btn-custom w-100 text-white"
-                    >
-                      Sign In to your account
-                    </button>
+                    id=""
+                    type="submit"
+                    class="btn btn-custom w-100 text-white"
+                  >
+                    Sign In to your account
+                  </button>
+                   </a>
                   </div>
                 </form>
               </div>
@@ -196,12 +198,11 @@
     <script src="particles.js-master\particles.js"></script>
     <script src="particles.js-master\demo\js\app.js"></script>
     <script type="text/javascript">
-      console.log("script called");
       document
         .getElementById("loginBtn")
         .addEventListener("click", function () {
-          console.log("called");
-          window.location.href = "https://vip-magzine.vercel.app/home";
+         // window.location.href = "https://vip-magzine.vercel.app/home"; 
+          window.location.href = "/home"
         });
     </script>
   </body>
