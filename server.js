@@ -5,6 +5,15 @@ const port = process.env.PORT || 6932
 
 app.use("/assets", express.static(__dirname + "/styles/app.css"))
 
+
+app.get("/home", (_, res) => {
+  res.sendFile(__dirname + "/home.html")
+})
+
+app.get("/profile", (_, res) => {
+  res.sendFile(__dirname + "/profile.html")
+})
+
 app.get("/signup", (_, res) => {
   res.sendFile(__dirname + "/signup.html")
 })
