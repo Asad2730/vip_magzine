@@ -11,21 +11,24 @@
 
 <body>
     <div class="flex flex-1">
-        <div class="flex flex-col h-screen w-screen">
-            <!-- Header -->
-            <div class="flex flex-col w-full h-1/6 bg-white p-4">
+        <div class="flex flex-col  h-screen w-screen">
+            <!-- Header.. h-1/6 -->
+            <div class="flex flex-row 
+            sm:flex-col md:flex-col lg:flex-col w-full h-auto bg-white p-4">
+             
                 <!-- Header Content -->
                 <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
                     <!-- Title -->
-                    <div class="text-center md:text-left w-full md:w-1/5 mb-4 md:mb-0">
-                        <span class="font-bold text-lg">VIP CLUB SCENE MAGAZINE</span>
+                    <div class=" md:text-left w-full md:w-1/5 mb-4 md:mb-0">
+                        <span class="font-bold text-lg ">VIP CLUB SCENE MAGAZINE</span>
                     </div>
 
                     <!-- User Menu -->
                     <div class="w-full md:w-4/5">
                         <ul class="flex flex-col md:flex-row items-center justify-end md:pr-20 mt-4 md:mt-0">
                             <li class="text-center md:text-right">
-                                <span>Welcome</span>
+                                <span>Welcome</span><br/>
                                 <select class="bg-gray-200 text-center md:text-left rounded px-3 py-1">
                                     <option value="user_name">User_Name</option>
                                     <option value="my_profile">
@@ -51,8 +54,8 @@
                 <div class="flex flex-row w-full">
                     <div class="flex sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
                     <div class="flex w-full mt-10 sm:mt-0 lg:mt-0">
-                        <!-- Side Navigation -->
-                        <div class="flex flex-col w-1/6 p-4">
+                        <!-- Side Navigation w-1/6 -->
+                        <div class="flex flex-col w-auto p-4">
                             <ul class="flex flex-col space-y-2">
                                 <li class="flex items-center space-x-2 text-blue-800">
                                     <a href="#">

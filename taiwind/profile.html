@@ -12,38 +12,41 @@
 <body>
     <div class="flex flex-1">
         <div class="flex flex-col h-screen w-screen">
-            <!-- Header -->
-            <div class="flex flex-col w-full h-1/6 bg-white p-4">
-                <!-- Header Content -->
-                <div class="flex flex-col md:flex-row items-center justify-between">
-                    <!-- Title -->
-                    <div class="text-center md:text-left w-full md:w-1/5 mb-4 md:mb-0">
-                        <span class="font-bold text-lg">VIP CLUB SCENE MAGAZINE</span>
-                    </div>
+           <!-- Header.. h-1/6 -->
+           <div class="flex flex-row 
+           sm:flex-col md:flex-col lg:flex-col w-full h-auto bg-white p-4">
+               <!-- Header Content -->
+               <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
+                   <!-- Title -->
+                   <div class="md:text-left w-full md:w-1/5 mb-4 md:mb-0">
+                       <span class="font-bold text-lg ">VIP CLUB SCENE MAGAZINE</span>
+                   </div>
 
-                    <!-- User Menu -->
-                    <div class="w-full md:w-4/5">
-                        <ul class="flex flex-col md:flex-row items-center justify-end md:pr-20 mt-4 md:mt-0">
-                            <li class="text-center md:text-right">
-                                <span>Welcome<br></span>
-                                <select class="bg-gray-200 text-center md:text-left rounded px-3 py-1">
-                                    <option value="user_name">User_Name</option>
-                                    <option value="my_profile">
-                                        <a href="#" class="flex items-center">
-                                            <i class="fas fa-user mr-2"></i> My Profile
-                                        </a>
-                                    </option>
-                                    <option value="logout">
-                                        <a href="#" class="flex items-center">
-                                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
-                                        </a>
-                                    </option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                   <!-- User Menu -->
+                   <div class="w-full md:w-4/5">
+                       <ul class="flex flex-col md:flex-row items-center justify-end md:pr-20 mt-4 md:mt-0">
+                           <li class="text-center md:text-right">
+                               <span>Welcome</span><br/>
+                               <select class="bg-gray-200 text-center md:text-left rounded px-3 py-1">
+                                   <option value="user_name">User_Name</option>
+                                   <option value="my_profile">
+                                       <a href="#" class="flex items-center">
+                                           <i class="fas fa-user mr-2"></i> My Profile
+                                       </a>
+                                   </option>
+                                   <option value="logout">
+                                       <a href="#" class="flex items-center">
+                                           <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                                       </a>
+                                   </option>
+                               </select>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+          
             <!-- End of Header -->
 
             <!-- Main -->
@@ -53,16 +56,16 @@
                     <div class="flex sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
 
                     <div class="flex w-full mt-10 sm:mt-0 lg:mt-0 md:mt-0">
-                        <!-- Side Navigation -->
-                        <div class="flex flex-col w-1/6 p-4">
+                         <!-- Side Navigation w-1/6 -->
+                         <div class="flex flex-col w-auto p-4">
                             <ul class="flex flex-col space-y-2">
-                                <li class="flex items-center space-x-2 text-blue-800">
+                                <li class="flex items-center space-x-2  ">
                                     <a href="#">
                                         <i class="fas fa-home"></i>
-                                        <span>Home</span>
+                                        <span >Home</span>
                                     </a>
                                 </li>
-                                <li class="flex items-center space-x-2 text-blue-800 bg-white p-2 rounded shadow">
+                                <li class="flex items-center space-x-2 text-black bg-white p-2 rounded shadow">
                                     <a href="#">
                                         <i class="fas fa-user"></i>
                                         <span>MyProfile</span>
@@ -107,7 +110,7 @@
                                         <label class="block mb-2 text-sm font-medium text-black">Confirm Password</label>
                                         <input type="password" class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-3" />
                                     </div>
-                                    <button type="submit" class="text-white bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <button type="submit" class="text-white bg-blue-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                                         Update
                                     </button>
                                 </form>
@@ -136,14 +139,71 @@
                                     </div>
                                     <div class="mb-5">
                                         <label class="block mb-2 text-sm font-medium text-black">Phone</label>
-                                        <input type="input" class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-3" />
+                                        <input type="input" class="shadow-sm border border-gray-300 
+                                        text-gray-900 text-sm rounded-lg w-full p-3" />
                                     </div>
-                                    <button type="submit" class="text-white bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <button type="submit" class="text-white bg-blue-500  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                                         Update
                                     </button>
                                 </form>
                             </div>
                             <!-- End of Card 3 -->
+
+                          
+                            <!-- Card 4 -->
+                            <div class="block w-4/5 p-6 bg-gray-50 border border-gray-200 rounded-lg shadow">
+                                <!-- Card Header -->
+                                <div class="bg-gray-100 p-4 rounded-t-lg">
+                                    <h2 class="text-lg font-semibold text-black">Payment Details</h2>
+                                </div>
+                                <!-- Form -->
+                                <form class="p-4">
+                                    <div class="mb-5">
+                                        <label class="block mb-2 text-sm font-bold text-black">
+                                            Subscription Amount: $
+                                        </label>
+                                  
+                                    </div>
+                                    <div class="mb-5">
+                                        <label class="block mb-2 text-sm font-bold text-black">
+                                            Subscription Date:
+                                        </label>
+                                      
+                                    </div>
+                                    <div class="mb-5">
+                                        <label class="block mb-2 text-sm font-bold text-black">
+                                            Payment Method:
+                                        </label>
+                                     
+                                    </div>
+                                    <div class="mb-5">
+                                        <label class="block mb-2 text-sm font-bold text-black">
+                                            Payment Status:
+                                        </label>
+                                        
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <button type="submit" class="text-white bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm   
+                                     px-5 py-2.5 w-1/2">
+                                         Change Method
+                                        </button>
+                                        <button type="submit" class="text-white bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm   
+                                     px-5 py-2.5 w-1/2 ml-4">
+                                          Cancel Subscription
+                                        </button>
+                                      </div>
+                                </form>
+                            </div>
+                            <!-- End of Card 4 -->
+                            <div class="flex justify-center  w-4/5 p-6 bg-gray-50 border border-gray-200 rounded-lg shadow">
+                                   
+                            <footer class="position-fixed bottom-0">
+                                <span class="text-center ">
+                                    Copyright by © VIP CLUB SCENE MAGAZINE 2024
+                                </span>
+                            </footer>
+
+                            </div>
                         </div>
                         <!-- End of Main Content Area -->
 
@@ -153,8 +213,11 @@
                 </div>
             </div>
             <!-- End of Main -->
+           
         </div>
+       
     </div>
+   
 </body>
 
 </html>
