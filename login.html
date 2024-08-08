@@ -34,13 +34,7 @@
         left: 0;
         z-index: -1; /* Behind other content */
       }
-      #main {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        z-index: 1; /* Ensure it appears above particles */
-        background: transparent; /* Make sure the background is transparent */
-      }
+    
       .card-wrapper {
         position: relative;
         width: 100%;
@@ -83,6 +77,37 @@
           white-space: nowrap; /* Prevent text from wrapping */
         }
       }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #main {
+        flex: 1; /* Allow the main content area to grow and push the footer down */
+      }
+      
+      .footer {
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+      .footer-links a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
     
     </style>
   </head>
@@ -144,7 +169,7 @@
 
       <!-- Main Content -->
       <div
-        class="flex-grow-1 d-flex flex-column align-items-center justify-content-center"
+        class="flex-grow-1 d-flex flex-column align-items-center"
       >
         <div
           class="w-100 d-flex align-items-center justify-content-center px-4 px-sm-6 px-lg-8"
@@ -202,25 +227,18 @@
         </div>
       </div>
       <!-- Footer Links -->
-      <footer class="fixed-bottom" style=" background-color: #ffffff;width: 100%;">
-        <div class="justify-center text-primary small mb-3">
-          <a href="https://blog.vipclubscene.com/"
-            ><span class="mx-1">Blog</span></a
-          >
-          <a href="https://vipclubscene.com/p/tos"
-            ><span class="mx-1">Terms of Service</span></a
-          >
-          <a href="https://vipclubscene.com/p/privacy-policy"
-            ><span class="mx-1">Privacy Policy</span></a
-          >
-          <a href="https://vipclubscene.com/contact-page"
-            ><span class="mx-1">Contact Us</span></a
-          >
+      <footer class="footer">
+        <div class="justify-center text-primary small">
+          <a href="https://blog.vipclubscene.com/"><span class="mx-1">Blog</span></a>
+          <a href="https://vipclubscene.com/p/tos"><span class="mx-1">Terms of Service</span></a>
+          <a href="https://vipclubscene.com/p/privacy-policy"><span class="mx-1">Privacy Policy</span></a>
+          <a href="https://vipclubscene.com/contact-page"><span class="mx-1">Contact Us</span></a>
         </div>
         <div class="text-secondary small text-center">
           © 2024 VIP Club Scene Magazine | All Rights Reserved
         </div>
       </footer>
+      
        <!-- End of Footer Links -->
     </div>
 
