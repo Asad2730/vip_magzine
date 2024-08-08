@@ -85,11 +85,7 @@
       }
     }
 
-    .footer-link {
-      background-color: #ffffff;
-      width: 100%;
-      text-align: center;
-    }
+   
   </style>
 </head>
 
@@ -175,7 +171,7 @@
               </div>
               <form>
                 <div class="mb-3 w-100">
-                  <label class="form-label">
+                  <label class="form-label" style="font-weight: 600;">
                     Email<span class="text-red">*</span>
                   </label>
                   <input
@@ -184,7 +180,7 @@
                   />
                 </div>
                 <div class="mb-3 w-100">
-                  <label class="form-label">
+                  <label class="form-label" style="font-weight: 600;">
                     Username<span class="text-red">*</span>
                   </label>
                   <input
@@ -193,7 +189,7 @@
                   />
                 </div>
                 <div class="mb-3 w-100">
-                  <label class="form-label">
+                  <label class="form-label" style="font-weight: 600;">
                     Password<span class="text-red">*</span>
                   </label>
                   <input
@@ -202,7 +198,7 @@
                   />
                 </div>
                 <div class="mb-3 w-100">
-                  <label class="form-label">
+                  <label class="form-label" style="font-weight: 600;">
                     Repeat Password<span class="text-red">*</span>
                   </label>
                   <input
@@ -211,7 +207,7 @@
                   />
                 </div>
                 <div class="mb-3 w-100">
-                  <label class="form-label">
+                  <label class="form-label" style="font-weight: 600;">
                     3 + 6<span class="text-red">*</span>
                   </label>
                   <input
@@ -227,21 +223,23 @@
               </form>
             </div>
           </div>
+
           <!-- End of Card -->
-          <div class="text-primary text-secondary text-center">
-            Already Have an account?
-          </div> 
+          <div class="w-100 d-flex flex-column align-items-center mt-1">
+            <div class="text-center mb-2">
+              <div class="text-secondary">Already Have an account?</div>  
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Footer Links -->
-    <div class="footer-link">
-      
+    <footer class="fixed-bottom" style=" background-color: #ffffff;width: 100%;">
       <a href="/" class="text-blue-800">
         Sign in to your account
       </a>
-    </div>
+    </footer>
     <!-- End of Footer Links -->
 
   </div>
