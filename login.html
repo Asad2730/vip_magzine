@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .btn-custom {
+        background-color: #23173d;
+        color: #fff;
+      }
+      .btn-custom:hover {
+        background-color: #1a1d2f;
+      }
+      .text-black {
+        color: #000000;
+      }
+      .text-primary {
+        color: #4242f5;
+      }
+      .text-secondary {
+        color: #333;
+      }
+      #particles-js {
+        background: #1db9de;
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+        position: fixed; /* Fixed position to stay in place */
+        top: 0;
+        left: 0;
+        z-index: -1; /* Behind other content */
+      }
+    
+      .card-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 400px; /* Same width as the card */
+        margin: auto;
+      }
+      .navbar-nav {
+        display: flex;
+        justify-content: space-between; /* Space between items */
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .navbar-nav .nav-item {
+        flex: 0 1 auto; /* Allow items to shrink but not grow */
+      }
+      .navbar-nav .nav-item:first-child {
+        margin-left: 0; /* Ensure no extra margin on the first item */
+      }
+      .navbar-nav .nav-item:last-child {
+        margin-right: 0; /* Ensure no extra margin on the last item */
+      }
+      .navbar-nav .nav-item:first-child {
+        position: absolute;
+        left: 0;
+      }
+      .navbar-nav .nav-item:last-child {
+        position: absolute;
+        right: 0;
+      }
+      .card {
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      /* Responsive text size adjustment for button */
+      @media (max-width: 576px) {
+        /* Adjust breakpoint as needed */
+        .btn-custom {
+          font-size: 0.75rem; /* Reduce font size for smaller screens */
+          white-space: nowrap; /* Prevent text from wrapping */
+        }
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #main {
+        flex: 1; /* Allow the main content area to grow and push the footer down */
+      }
+      
+      .footer {
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+      .footer-links a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+      
+    
+    </style>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="d-flex flex-column" id="main">
+      <!-- Navbar -->
+      <div class="card-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top py-2"
+        >
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <!-- li-1 aligned with start of card -->
+                <li class="nav-item me-3">
+                  <a
+                    class="nav-link text-primary"
+                    href="https://vipclubscene.com/"
+                  >
+                    <img
+                      src="https://magazine.vipclubscene.com/assets/img/global/VIP_Club_Scene_Entrance_Page"
+                      alt="nav_icon_1"
+                    />
+                  </a>
+                </li>
+                <!-- li-2 aligned with end of card -->
+                <li class="nav-item dropdown me-3">
+                  <button
+                    class="nav-link text-primary"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="row-auto">
+                      <img
+                        src="https://magazine.vipclubscene.com/assets/img/global/usaglobal.png"
+                      />
+                      English
+                    </span>
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item text-primary" href="#">French</a>
+                    <a class="dropdown-item text-primary" href="#">Swedish</a>
+                    <a class="dropdown-item text-primary" href="#">Italian</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- End of Navbar -->
+
+      <!-- Main Content -->
+      <div
+        class="flex-grow-1 d-flex flex-column align-items-center"
+      >
+        <div
+          class="w-100 d-flex align-items-center justify-content-center px-4 px-sm-6 px-lg-8"
+        >
+          <div class="py-3 mx-auto" style="max-width: 400px">
+            <!-- Card -->
+            <div class="card p-4 mt-4 text-start bg-white rounded shadow-lg">
+              <div class="d-flex flex-column h-100">
+                <div class="text-center mb-4">
+                  <img
+                    src="https://magazine.vipclubscene.com/img/vip%20club%20scene%20magazine%20logo%20blue"
+                    class="w-50"
+                    alt="logo"
+                  />
+                  <h5 class="mt-2 mb-0 text-dark font-weight-light fs-6">
+                    SIGN IN TO YOUR ACCOUNT
+                  </h5>
+                </div>
+                <form>
+                  <div class="mb-3 w-100">
+                    <label class="form-label" style="font-weight: 600;">Username</label>
+                    <input
+                      type="text"
+                      class="form-control rounded-lg text-black"
+                    />
+                  </div>
+                  <div class="mb-3 w-100">
+                    <label class="form-label" style="font-weight: 600;">Password</label>
+                    <input
+                      type="password"
+                      class="form-control rounded-lg text-white"
+                    />
+                  </div>
+                  <div class="mb-3 w-100">
+                    <a href="/forgetPassword" class="d-block text-primary"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                  <div class="mb-3 w-100">
+                    <a href="/home" class="btn btn-custom w-100 text-white"
+                      >Sign In to your account</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- End of Card -->
+            <div class="w-100 d-flex flex-column align-items-center mt-1">
+              <div class="text-center mb-2">
+                <div class="text-secondary">Don't have an account?</div>
+                <a href="/signup" class="text-primary">Sign up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Links -->
+      <footer class="footer">
+        <div class="justify-center text-primary small">
+          <a href="https://blog.vipclubscene.com/"><span class="mx-1">Blog</span></a>
+          <a href="https://vipclubscene.com/p/tos"><span class="mx-1">Terms of Service</span></a>
+          <a href="https://vipclubscene.com/p/privacy-policy"><span class="mx-1">Privacy Policy</span></a>
+          <a href="https://vipclubscene.com/contact-page"><span class="mx-1">Contact Us</span></a>
+        </div>
+        <div class="text-secondary small text-center">
+          © 2024 VIP Club Scene Magazine | All Rights Reserved
+        </div>
+      </footer>
+      
+       <!-- End of Footer Links -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
+  </body>
+</html>

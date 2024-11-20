@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      /* Ensure the main element takes up the remaining space */
+      .main-content {
+        min-height: calc(100vh - 60px);
+        /* Adjust 60px to match the height of your header */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex flex-column h-100">
+      <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- *** -->
+        <div class="d-flex col-sm-1 col-md-1 col-lg-1"></div>
+        <!-- Title -->
+        <div
+          class="d-flex align-items-center ms-4 ms-md-0 w-100 w-md-20 mb-4 mb-md-0"
+        >
+          <a class="navbar-brand">VIP CLUB SCENE MAGAZINE</a>
+          <a class="nav-link text-primary" href="https://vipclubscene.com/">
+            <img
+              src="https://magazine.vipclubscene.com/assets/img/global/VIP_Club_Scene_Entrance_Page"
+              alt="nav_icon_1"
+              style="max-height: 40px"
+            />
+          </a>
+        </div>
+
+        <!-- User Menu -->
+        <div class="w-100 w-md-80">
+          <div class="container">
+            <div
+              class=" d-flex flex-column flex-md-row align-items-center justify-content-end pe-4 mt-4 mt-md-0"
+            >
+            <span class="nav-item dropdown me-3">
+              <button
+                class="nav-link text-primary"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="row-auto">
+                  <img
+                    src="https://magazine.vipclubscene.com/assets/img/global/usaglobal.png"
+                    style="width: 30px; height:auto;"
+                  />
+                  English
+                </span>
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <a class="dropdown-item text-primary" href="#">French</a>
+                <a class="dropdown-item text-primary" href="#">Swedish</a>
+                <a class="dropdown-item text-primary" href="#">Italian</a>
+              </div>
+            </span>
+             
+            <!-- 2nd ddl -->
+              <span class="nav-item dropdown text-center">
+                Welcome <br />
+                <span
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  User_Name
+                  <!-- <i class="fas fa-user"></i> -->
+                </span>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="/profile"
+                      ><i class="fas fa-user me-2"></i> My Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-sign-out-alt me-2"></i> Logout</a
+                    >
+                  </li>
+                </ul>
+              </span>
+              
+     
+
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex col-sm-1 col-md-1 col-lg-1"></div>
+      </header>
+
+      <!-- row flex-grow-1  -->
+      <main class="main-content d-flex flex-row flex-grow-1 mt-3">
+        <!-- **** -->
+        <div class="d-flex col-sm-1 col-md-1 col-lg-1"></div>
+
+        <aside class="col-md-2">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="nav-link active" href="/home">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-black" href="#">
+                <i class="fas fa-user"></i> My Profile
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="container">
+          <section class="col">
+            <!-- Card 1 -->
+            <div
+              class="card alert alert-warning border-secondary rounded shadow mb-4"
+              role="alert"
+            >
+              <div class="card-body">
+                <strong>Note!</strong>
+                If you want to change your username, email, or you have
+                registered via social network and you want to change your
+                password now, please contact the administrator.
+              </div>
+            </div>
+            <!-- End Card 1 -->
+
+            <!-- Card 2 -->
+
+            <div class="card mb-4">
+              <div class="card-header">Change Password</div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="oldPassword" class="form-label"
+                      >Old Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="oldPassword"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="newPassword" class="form-label"
+                      >New Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="newPassword"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="confirmPassword"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+              </div>
+            </div>
+            <!-- End of Card 2 -->
+
+            <!-- Card 3 -->
+            <div class="card mb-4">
+              <div class="card-header">Your Details</div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+              </div>
+            </div>
+            <!-- End of Card 3 -->
+
+            <!-- Card 4 -->
+
+            <div class="card mb-4">
+              <!-- Card Header -->
+              <div class="card-header bg-gray-100">Payment Details</div>
+              <!-- Form -->
+              <div class="card-body">
+                <form>
+                  <div class="mb-4">
+                    <label for="subscriptionAmount" class="form-label fw-bold"
+                      >Subscription Amount: $</label
+                    >
+                  </div>
+                  <div class="mb-4">
+                    <label for="subscriptionDate" class="form-label fw-bold"
+                      >Subscription Date:</label
+                    >
+                  </div>
+                  <div class="mb-4">
+                    <label for="paymentMethod" class="form-label fw-bold"
+                      >Payment Method:</label
+                    >
+                  </div>
+                  <div class="mb-4">
+                    <label for="paymentStatus" class="form-label fw-bold"
+                      >Payment Status:</label
+                    >
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-center gap-3"
+                  >
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100 w-md-50 text-nowrap"
+                    >
+                      Change Method
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger w-100 w-md-50 text-nowrap"
+                    >
+                      Cancel Subscription
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- End of Card 4 -->
+            <div class="flex flex-col h-screen">
+              <div
+                class="flex justify-center w-4/5 p-6 bg-gray-50 border border-gray-200 rounded-lg shadow flex-grow"
+              ></div>
+              <footer class="bg-gray-200 text-center py-4">
+                Copyright © VIP CLUB SCENE MAGAZINE 2024
+              </footer>
+            </div>
+            <!-- Footer -->
+          </section>
+        </div>
+        <div class="d-flex col-sm-1 col-md-1 col-lg-1"></div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
